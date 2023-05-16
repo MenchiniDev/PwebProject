@@ -10,9 +10,9 @@
 <?php
 // Configurazione di connessione al database
 $servername = "localhost"; // Indirizzo del server MySQL
-$username = "username"; // Nome utente per l'accesso al database
-$password = "password"; // Password per l'accesso al database
-$dbname = "database"; // Nome del database
+$username = "root"; // Nome utente per l'accesso al database
+$password = ""; // Password per l'accesso al database
+$dbname = "Progetto615580"; // Nome del database
 
 // Connessione al server MySQL
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,7 +23,7 @@ if ($conn->connect_error) {
 }
 
 // Esempio di query
-$sql = "SELECT * FROM tabella";
+/*$sql = "SELECT * FROM tabella";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -33,10 +33,7 @@ if ($result->num_rows > 0) {
     }
 } else {
     echo "Nessun risultato trovato.";
-}
-
-// Chiusura della connessione al database
-$conn->close();
+}*/
 ?>
 
     <div class="top-bar">
@@ -62,4 +59,8 @@ $conn->close();
     </form>
     </div>
 </body>
+
+<?php 
+    $conn->close(); 
+?>
 </html>

@@ -24,7 +24,7 @@
   ?>
 
   <h2>Registrazione</h2>
-  <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
+  <form action="contorlSignUp.php" method="POST">
     <label for="username">Nome utente:</label>
     <input type="text" id="username" name="username" required><br><br>
 
